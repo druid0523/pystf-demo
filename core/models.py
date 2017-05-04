@@ -14,4 +14,4 @@ class Device(models.Model):
     imei = models.CharField(max_length=64)
     os_version = models.CharField(max_length=32)
     last_heartbeat = models.IntegerField(null=True)
-    stauts = models.CharField(max_length=32)
+    status = models.CharField(max_length=32)  # status: offline, online, connected
